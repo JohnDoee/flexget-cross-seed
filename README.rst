@@ -19,6 +19,8 @@ Please note that it requires an almost exact match, e.g. `movie_1.mkv` does not 
 Example
 -------
 
+Flexget task example:
+
 .. code:: yaml
 
    example-site:
@@ -31,8 +33,8 @@ Example
        - title:
            extract: "NEW: (.+)" # The RSS feed have some additional data we need removed
                                 # i.e. the feed says "NEW: movie1"
-     download: /data/torrents/
-     exec: ~/autotorrent-env/bin/autotorrent -c ~/autotorrent-env/autotorrent.conf -l example-site-client -r -a /data/torrents/*.torrent
+     download: /data/torrents/example-site/
+     exec: ~/autotorrent-env/bin/autotorrent -c ~/autotorrent-env/autotorrent.conf -l example-site-client -r -a /data/torrents/example-site/*.torrent
 
 License
 -------
