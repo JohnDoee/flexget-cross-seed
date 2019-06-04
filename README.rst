@@ -6,7 +6,7 @@ This plugin can check your local files to see if it matches anything found by Fl
 Installation
 ------------
 
-Download `cross-seed.py` and put it in the. `~/.flexget/plugins/` folder. If the folder does not exist, create it.
+Download `cross-seed.py` and put it in the correct plugin folder. `Check out the official documentation for instructions on how to install plugins <https://www.flexget.com/Plugins#third-party-plugins>`_.
 
 Usage
 -----
