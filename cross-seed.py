@@ -1,5 +1,4 @@
 from __future__ import unicode_literals, division, absolute_import
-import logging
 
 import glob
 import os
@@ -11,7 +10,12 @@ from flexget import plugin
 from flexget.event import event
 from flexget.config_schema import one_or_more
 
-log = logging.getLogger('cross-seed')
+try:
+    from loguru import logger
+    log = logger.bind(name='cross-seed')
+except ImportError:
+    import logging
+    log = logging.getLogger('cross-seed')
 
 
 class FilterCrossSeed(object):
